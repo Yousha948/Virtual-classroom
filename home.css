@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('images/abstract-paper-background-concept.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+}
+
+.teaching {
+    margin: 4rem;
+    text-align: center;
+    display: flex;
+}
+
+.header {
+    background: linear-gradient(62deg, #52eee1, #3cdce7, #23A6D5, #0290bf);
+    animation: gradient 10s ease infinite;
+    background-size: 400% 400%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    text-align: center;
+    width: 5rem;
+    border-radius: 4px;
+    color: #000000;
+}
+
+#nullTeachingEnrolled {
+    padding: 1rem;
+    position: absolute;
+    max-width: 60%;
+    max-height: 11rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 1rem;
+    text-align: center;
+    color: rgb(54, 53, 53);
+    background: rgba(255 255 255 / 82%);
+    box-sizing: border-box;
+}
+
+#nullTeachingEnrolled p {
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.null-button {
+    all: unset;
+    border: 1px solid rgba(0, 0, 0, 0.527);
+    color: rgba(0, 0, 0, 0.493);
+    padding: 0.5rem;
+    margin: 0.5rem auto;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-variant-numeric: tabular-nums;
+    transition: 0.4s ease-in-out;
+    position: relative;
+}
+
+.null-button:hover,
+.null-button:active {
+    font-size: 1.3rem;
+    font-weight: 700;
+    border: 2px solid rgba(0, 0, 0, 0.842);
+    color: rgba(0, 0, 0, 0.842);
+}
+
+.EnrolledclassBox,
+.classBox {
+    margin: 30px;
+    width: 17rem;
+    min-height: 12rem;
+    background: url('images/mouse-near-crayons-with-copy-space.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    backdrop-filter: blur(12px);
+    padding: 35px;
+    border: 1px solid rgba(255, 255, 255, .25);
+    border-radius: 20px;
+    box-shadow: 0 0.4px 0.4px rgba(128, 128, 128, 0.109), 0 1px 1px rgba(128, 128, 128, 0.155), 0 2.1px 2.1px rgba(128, 128, 128, 0.195), 0 4.4px 4.4px rgba(128, 128, 128, 0.241), 0 5px 5px rgba(128, 128, 128, 0.35);
+    transition: transform 0.4s ease, font-size 0.4s ease;
+    font-size: 1.2rem;
+    color: rgba(2, 157, 36, 0.891);
+    font-weight: 700;
+}
+
+.EnrolledclassBox:hover,
+.classBox:hover {
+    transform: scale(1.04);
+    box-shadow: rgb(85, 218, 195) 0px 0px 40px;
+    font-size: 1.3rem;
+}
+
+.enrolled {
+    margin: 4rem;
+    text-align: center;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+
+input>#delete_class_btn {
+    padding: 20px;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+input>#delete_class_btn:hover {
+    background-color: #000000;
+    color: white;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

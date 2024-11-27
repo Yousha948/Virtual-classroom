@@ -1,0 +1,146 @@
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #67b3f0;
+}
+
+.Wrapper2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.user_details {
+    background: url('images/green-desk-with-stationery-top-view-copypace.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 5rem;
+    width: 80%;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    color: #ffffff;
+    position: sticky;
+}
+
+.assignment_box {
+    margin-top: 20px;
+}
+
+.people_column {
+    background-color: rgb(219, 90, 43);
+    width: 20rem;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    color: #2c2c2c;
+    display: none;
+}
+
+.main2 {
+    background: linear-gradient(62deg, #ef4967, #27a0f0, #01b0cf);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    width: 80%;
+    padding: 20px;
+    color: #fcf5ed;
+    border-radius: 10px;
+}
+
+.navigation-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+}
+
+.navigation-link {
+    padding: 12px 20px;
+    min-width: 7rem;
+    margin: 5px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    width: 50%;
+}
+
+.navigation-link:hover {
+    background-color: #0056b3;
+}
+
+#post_text_area,
+#assignment-textarea {
+    width: 93%;
+    height: 70px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+#assignment-upload-button {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    min-width: 6rem;
+}
+
+#post_button {
+    min-width: 6rem;
+}
+
+#assignment-upload-button:hover {
+    background-color: #45a049;
+}
+
+#fileToUpload {
+    margin-bottom: 10px;
+}
+
+#second {
+    display: none;
+}
+
+#first {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: #2c2c2c;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+button {
+    padding: 10px;
+    background-color: #45a049;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    margin-top: 1rem;
+}
